@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+message Images {
+  message Image {
+    optional string filename = 1;
+    optional int64 size = 2;
+    optional int64 createdTime = 3;
+    optional int64 modifiedTime = 4;
+  }
+  repeated Image images = 1;
+}
